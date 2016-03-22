@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qcr-W3-fVx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hd8-Na-a4M">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -99,7 +99,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ARTE-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ee-wt-Yxf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ARTE-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ee-wt-Yxf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                         </subviews>
@@ -114,7 +114,7 @@
         <!--View Controller-->
         <scene sceneID="8Sp-iP-du8">
             <objects>
-                <viewController id="qcr-W3-fVx" customClass="ViewController" customModule="Arte" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="qcr-W3-fVx" customClass="ViewController" customModule="Arte" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LYO-JX-axf"/>
                         <viewControllerLayoutGuide type="bottom" id="FfJ-uU-BOY"/>
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gC3-hY-OxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="696" y="1585"/>
+            <point key="canvasLocation" x="2260" y="623"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="F0I-Ne-5E7">
@@ -174,14 +174,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4eL-H8-N2j">
-                                <rect key="frame" x="0.0" y="0.0" width="750" height="1334"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ARTE-02.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ufg-QQ-ZGV">
-                                        <rect key="frame" x="0.0" y="0.0" width="750" height="1334"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ARTE-02.png" translatesAutoresizingMaskIntoConstraints="NO" id="YF1-rA-xEE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -194,6 +189,7 @@
         <!--View Controller-->
         <scene sceneID="maN-fc-FEa">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Hi-8l-7aY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ImageThree" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N6r-v8-bgL" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qS7-JW-apE"/>
@@ -203,15 +199,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ARTE-03.png" translatesAutoresizingMaskIntoConstraints="NO" id="VOw-iw-Sq6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ARTE-03.png" translatesAutoresizingMaskIntoConstraints="NO" id="xtX-XH-GRE">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUc-va-NhM">
+                                <rect key="frame" x="80" y="677" width="254" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="View Profile">
+                                    <color key="titleColor" red="0.98658893079999999" green="0.98658893079999999" blue="0.98658893079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qcr-W3-fVx" kind="show" id="Wqv-1z-Els"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xtX-XH-GRE" firstAttribute="bottom" secondItem="Bf0-Xx-13q" secondAttribute="top" id="2Id-Wl-4mG"/>
+                            <constraint firstItem="xtX-XH-GRE" firstAttribute="top" secondItem="Ika-65-XVc" secondAttribute="top" id="5C1-TF-SuT"/>
+                            <constraint firstItem="jUc-va-NhM" firstAttribute="top" secondItem="qS7-JW-apE" secondAttribute="bottom" constant="653" id="7vX-BE-Ism"/>
+                            <constraint firstItem="jUc-va-NhM" firstAttribute="centerX" secondItem="Ika-65-XVc" secondAttribute="centerX" id="FUf-Z3-tdB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jUc-va-NhM" secondAttribute="trailing" constant="92" id="GAv-VD-bS9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jUc-va-NhM" secondAttribute="trailing" constant="40" id="JEe-W5-TmM"/>
+                            <constraint firstItem="jUc-va-NhM" firstAttribute="centerX" secondItem="Ika-65-XVc" secondAttribute="centerX" id="Kpc-9t-PIb"/>
+                            <constraint firstItem="Bf0-Xx-13q" firstAttribute="top" secondItem="jUc-va-NhM" secondAttribute="bottom" constant="40" id="NgL-4n-V1O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jUc-va-NhM" secondAttribute="trailing" constant="60" id="QQ9-Sh-71j"/>
+                            <constraint firstItem="jUc-va-NhM" firstAttribute="leading" secondItem="Ika-65-XVc" secondAttribute="leadingMargin" constant="20" id="Rx8-Tx-E6A"/>
+                            <constraint firstItem="xtX-XH-GRE" firstAttribute="top" secondItem="Ika-65-XVc" secondAttribute="top" id="ULT-rG-ltG"/>
+                            <constraint firstItem="jUc-va-NhM" firstAttribute="leading" secondItem="Ika-65-XVc" secondAttribute="leadingMargin" constant="93" id="UZ5-o8-rmt"/>
+                            <constraint firstItem="jUc-va-NhM" firstAttribute="leading" secondItem="Ika-65-XVc" secondAttribute="leadingMargin" constant="60" id="Vbb-QF-q0L"/>
+                            <constraint firstItem="xtX-XH-GRE" firstAttribute="leading" secondItem="Ika-65-XVc" secondAttribute="leading" id="XwH-E5-vqh"/>
+                            <constraint firstItem="xtX-XH-GRE" firstAttribute="leading" secondItem="Ika-65-XVc" secondAttribute="leading" id="ahZ-Ho-q9g"/>
+                            <constraint firstItem="Bf0-Xx-13q" firstAttribute="top" secondItem="jUc-va-NhM" secondAttribute="bottom" constant="20" id="byH-Tl-vAz"/>
+                            <constraint firstItem="jUc-va-NhM" firstAttribute="centerX" secondItem="Ika-65-XVc" secondAttribute="centerX" id="enJ-zI-am4"/>
+                            <constraint firstItem="xtX-XH-GRE" firstAttribute="bottom" secondItem="Bf0-Xx-13q" secondAttribute="top" id="moo-kG-Ql4"/>
+                            <constraint firstItem="Bf0-Xx-13q" firstAttribute="top" secondItem="jUc-va-NhM" secondAttribute="bottom" constant="33" id="ngh-r9-itz"/>
+                            <constraint firstItem="jUc-va-NhM" firstAttribute="leading" secondItem="Ika-65-XVc" secondAttribute="leadingMargin" constant="40" id="wja-db-LVz"/>
+                            <constraint firstAttribute="trailing" secondItem="xtX-XH-GRE" secondAttribute="trailing" id="yd5-QM-4ij"/>
+                            <constraint firstItem="jUc-va-NhM" firstAttribute="centerX" secondItem="xtX-XH-GRE" secondAttribute="centerX" id="yoy-bs-bcV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Id-Wl-4mG"/>
+                                <exclude reference="ULT-rG-ltG"/>
+                                <exclude reference="ahZ-Ho-q9g"/>
+                                <exclude reference="7vX-BE-Ism"/>
+                                <exclude reference="FUf-Z3-tdB"/>
+                                <exclude reference="GAv-VD-bS9"/>
+                                <exclude reference="JEe-W5-TmM"/>
+                                <exclude reference="Kpc-9t-PIb"/>
+                                <exclude reference="Rx8-Tx-E6A"/>
+                                <exclude reference="UZ5-o8-rmt"/>
+                                <exclude reference="wja-db-LVz"/>
+                                <exclude reference="yoy-bs-bcV"/>
+                                <exclude reference="NgL-4n-V1O"/>
+                                <exclude reference="ngh-r9-itz"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Hi-8l-7aY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1812" y="623"/>
         </scene>
