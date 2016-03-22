@@ -16,10 +16,20 @@ class ImageController: UIViewController, UIPageViewControllerDataSource, UIPageV
     // Mark: Data Source
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+        if let index = images.indexOf(viewController.restorationIdentifier!) {
+            if index > 0 {
+                return viewControllerAtIndex(index - 1)
+            }
+        }
         return nil
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+        if let  index = images.indexOf(viewController.restorationIdentifier!) {
+            if index < images.count - 1 {
+                return viewControllerAtIndex(index + 1)
+            }
+        }
         return nil
     }
     
