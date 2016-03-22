@@ -175,7 +175,6 @@
         <!--Timeline Controller-->
         <scene sceneID="DFh-35-hdf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VbV-ib-M3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="J0h-Sc-PYR" customClass="TimelineController" customModule="Arte" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tbL-Xf-C0b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -198,6 +197,7 @@
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VbV-ib-M3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1812" y="1448"/>
         </scene>
