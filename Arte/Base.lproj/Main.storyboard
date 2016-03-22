@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qcr-W3-fVx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hd8-Na-a4M">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -32,7 +32,7 @@
                                     <color key="titleColor" cyan="0.16" magenta="0.81000000000000005" yellow="1" black="0.050000000000000003" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yNi-5d-1DI" kind="presentation" id="KUZ-8o-bSV"/>
+                                    <segue destination="5wg-Kn-I7V" kind="show" id="hzQ-wm-tas"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bEI-bO-0LM">
@@ -58,20 +58,39 @@
             </objects>
             <point key="canvasLocation" x="-65" y="-269"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="TAL-m0-xRz">
+        <!--Image Controller-->
+        <scene sceneID="EoC-xp-eG9">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="yNi-5d-1DI" sceneMemberID="viewController">
+                <viewController id="5wg-Kn-I7V" customClass="ImageController" customModule="Arte" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BiT-se-bTs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xbn-Oh-NwZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ds9-eU-FbR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="626-On-ewC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="-269"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="z2x-u4-zC9">
+            <objects>
+                <pageViewController storyboardIdentifier="MyPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="d6y-Yb-zzh" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hBG-6B-6vq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSN-B0-Kn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="587" y="-269"/>
+            <point key="canvasLocation" x="935" y="-269"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="faO-nm-WWc">
             <objects>
-                <viewController storyboardIdentifier="artwork1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q3s-Dk-fKg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageOne" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q3s-Dk-fKg" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oxa-Gr-eFq"/>
                         <viewControllerLayoutGuide type="bottom" id="7pL-of-zKT"/>
@@ -114,29 +133,10 @@
                                     <action selector="TweetAction:" destination="qcr-W3-fVx" eventType="touchUpInside" id="1L2-bT-9zD"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ro7-b9-yJM">
-                                <rect key="frame" x="60" y="571" width="294" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCY-NS-2UZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="294" height="30"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="View Roberto's Timeline">
-                                            <color key="titleColor" red="0.98658893079999999" green="0.98658893079999999" blue="0.98658893079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="J0h-Sc-PYR" kind="presentation" id="ty7-dF-uMG"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.98658893084285237" green="0.98658893084285237" blue="0.98658893084285237" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ro7-b9-yJM" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="0AD-6c-s2H"/>
-                            <constraint firstItem="ro7-b9-yJM" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="Imp-kR-YNl"/>
                             <constraint firstItem="3B7-Ks-5ol" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="Kat-dy-p5d"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ro7-b9-yJM" secondAttribute="trailing" constant="40" id="LX0-Bs-I62"/>
-                            <constraint firstItem="ro7-b9-yJM" firstAttribute="top" secondItem="3B7-Ks-5ol" secondAttribute="bottom" constant="60" id="Mgx-Gi-mcs"/>
                             <constraint firstItem="FfJ-uU-BOY" firstAttribute="top" secondItem="3B7-Ks-5ol" secondAttribute="bottom" constant="225" id="SJE-yi-IAb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3B7-Ks-5ol" secondAttribute="trailing" constant="40" id="iwc-HX-06j"/>
                             <constraint firstItem="3B7-Ks-5ol" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="mst-yy-smh"/>
@@ -151,7 +151,7 @@
         <!--View Controller-->
         <scene sceneID="F0I-Ne-5E7">
             <objects>
-                <viewController storyboardIdentifier="artwork2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hal-8a-tgU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageTwo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hal-8a-tgU" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EeI-2Y-YJM"/>
                         <viewControllerLayoutGuide type="bottom" id="Jqn-fP-nbP"/>
@@ -172,39 +172,10 @@
             </objects>
             <point key="canvasLocation" x="1376" y="623"/>
         </scene>
-        <!--Timeline Controller-->
-        <scene sceneID="DFh-35-hdf">
-            <objects>
-                <tableViewController id="J0h-Sc-PYR" customClass="TimelineController" customModule="Arte" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tbL-Xf-C0b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ijA-WS-K5U">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ijA-WS-K5U" id="mxI-EE-w3w">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="J0h-Sc-PYR" id="gSl-yW-u2Z"/>
-                            <outlet property="delegate" destination="J0h-Sc-PYR" id="JJe-l7-iqk"/>
-                        </connections>
-                    </tableView>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VbV-ib-M3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1812" y="1448"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="maN-fc-FEa">
             <objects>
-                <viewController storyboardIdentifier="artwork3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N6r-v8-bgL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageThree" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N6r-v8-bgL" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qS7-JW-apE"/>
                         <viewControllerLayoutGuide type="bottom" id="Bf0-Xx-13q"/>
