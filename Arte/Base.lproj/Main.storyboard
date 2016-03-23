@@ -44,19 +44,29 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Left/Right to View Art" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCe-8W-PXb">
+                                <rect key="frame" x="60" y="653" width="294" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cyan="0.16" magenta="0.81000000000000005" yellow="1" black="0.050000000000000003" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <constraints>
+                            <constraint firstItem="lCe-8W-PXb" firstAttribute="top" secondItem="YLv-RQ-ggE" secondAttribute="bottom" constant="10" id="1hF-kr-aoP"/>
                             <constraint firstItem="YLv-RQ-ggE" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="40" id="6Ga-Fz-GWK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sWh-Q2-tXF" secondAttribute="trailing" constant="40" id="8hN-Sm-qIY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YLv-RQ-ggE" secondAttribute="trailing" constant="40" id="A92-D0-M23"/>
                             <constraint firstItem="bEI-bO-0LM" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="ASn-pd-REF"/>
                             <constraint firstItem="ljF-dC-4Dt" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="CsL-Kv-C3r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lCe-8W-PXb" secondAttribute="trailing" constant="40" id="MJK-76-fDL"/>
                             <constraint firstItem="sWh-Q2-tXF" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="Pb2-3b-yxj"/>
+                            <constraint firstItem="lCe-8W-PXb" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="40" id="TJe-XG-Eco"/>
                             <constraint firstItem="sG3-xF-oq9" firstAttribute="top" secondItem="sWh-Q2-tXF" secondAttribute="bottom" constant="40" id="TMG-kr-sui"/>
                             <constraint firstItem="bEI-bO-0LM" firstAttribute="centerY" secondItem="AKL-0Q-bhh" secondAttribute="centerY" id="UCq-al-buz"/>
                             <constraint firstItem="YLv-RQ-ggE" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="n5q-uT-qCu"/>
                             <constraint firstItem="YLv-RQ-ggE" firstAttribute="top" secondItem="ljF-dC-4Dt" secondAttribute="bottom" constant="60" id="oXK-VM-Dd9"/>
+                            <constraint firstItem="lCe-8W-PXb" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="rXN-t6-LfC"/>
                             <constraint firstItem="ljF-dC-4Dt" firstAttribute="top" secondItem="bEI-bO-0LM" secondAttribute="bottom" constant="40" id="sp8-fa-Tue"/>
                             <constraint firstItem="sWh-Q2-tXF" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="40" id="zgl-f3-HrP"/>
                         </constraints>
@@ -158,17 +168,21 @@
                                     <segue destination="Hd8-Na-a4M" kind="show" id="DE5-gL-aVS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Roberto" translatesAutoresizingMaskIntoConstraints="NO" id="sql-Vk-See">
-                                <rect key="frame" x="87" y="129" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Roberto" translatesAutoresizingMaskIntoConstraints="NO" id="sql-Vk-See">
+                                <rect key="frame" x="100" y="57" width="214" height="200"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.98658893084285237" green="0.98658893084285237" blue="0.98658893084285237" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xnh-R4-lDi" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="7cY-9m-MSB"/>
+                            <constraint firstItem="sql-Vk-See" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="80" id="8De-Uk-EAX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qoB-ke-swd" secondAttribute="trailing" constant="40" id="Eea-Rn-d0F"/>
+                            <constraint firstItem="xnh-R4-lDi" firstAttribute="top" secondItem="sql-Vk-See" secondAttribute="bottom" constant="365" id="OwT-Ib-sxB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sql-Vk-See" secondAttribute="trailing" constant="80" id="RVO-FS-Gdh"/>
                             <constraint firstItem="qoB-ke-swd" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="Y0o-31-yqf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xnh-R4-lDi" secondAttribute="trailing" constant="40" id="g4Z-Yw-We2"/>
                             <constraint firstItem="qoB-ke-swd" firstAttribute="top" secondItem="xnh-R4-lDi" secondAttribute="bottom" constant="20" id="jdB-Z2-AYT"/>
+                            <constraint firstItem="sql-Vk-See" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="oxg-JJ-kmE"/>
                             <constraint firstItem="xnh-R4-lDi" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="s3B-L7-85Z"/>
                             <constraint firstItem="qoB-ke-swd" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="ueR-Db-vWK"/>
                             <constraint firstItem="FfJ-uU-BOY" firstAttribute="top" secondItem="xnh-R4-lDi" secondAttribute="bottom" constant="80" id="wzy-rX-SnI"/>
@@ -207,7 +221,6 @@
         <!--View Controller-->
         <scene sceneID="maN-fc-FEa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Hi-8l-7aY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ImageThree" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N6r-v8-bgL" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qS7-JW-apE"/>
@@ -278,6 +291,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Hi-8l-7aY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2296" y="-269"/>
         </scene>
