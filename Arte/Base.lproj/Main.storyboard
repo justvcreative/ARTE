@@ -169,7 +169,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Roberto" translatesAutoresizingMaskIntoConstraints="NO" id="sql-Vk-See">
-                                <rect key="frame" x="100" y="57" width="214" height="200"/>
+                                <rect key="frame" x="100" y="260" width="214" height="200"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.98658893084285237" green="0.98658893084285237" blue="0.98658893084285237" alpha="1" colorSpace="calibratedRGB"/>
@@ -180,6 +180,7 @@
                             <constraint firstItem="xnh-R4-lDi" firstAttribute="top" secondItem="sql-Vk-See" secondAttribute="bottom" constant="365" id="OwT-Ib-sxB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sql-Vk-See" secondAttribute="trailing" constant="80" id="RVO-FS-Gdh"/>
                             <constraint firstItem="qoB-ke-swd" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="Y0o-31-yqf"/>
+                            <constraint firstItem="sql-Vk-See" firstAttribute="top" secondItem="LYO-JX-axf" secondAttribute="bottom" constant="240" id="bRT-C3-AgX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xnh-R4-lDi" secondAttribute="trailing" constant="40" id="g4Z-Yw-We2"/>
                             <constraint firstItem="qoB-ke-swd" firstAttribute="top" secondItem="xnh-R4-lDi" secondAttribute="bottom" constant="20" id="jdB-Z2-AYT"/>
                             <constraint firstItem="sql-Vk-See" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="oxg-JJ-kmE"/>
@@ -187,6 +188,11 @@
                             <constraint firstItem="qoB-ke-swd" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="ueR-Db-vWK"/>
                             <constraint firstItem="FfJ-uU-BOY" firstAttribute="top" secondItem="xnh-R4-lDi" secondAttribute="bottom" constant="80" id="wzy-rX-SnI"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OwT-Ib-sxB"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
