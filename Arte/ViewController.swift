@@ -13,10 +13,12 @@ class ViewController:  UIViewController {
    
     @IBAction func TweetAction(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
+            print("account yes")
             let tweetController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
             tweetController.setInitialText("Check out @Th3Ba1r0n's artwork on #ARTE App")
             self.presentViewController(tweetController, animated: true, completion: nil)
         } else {
+            print("account no")
             let alert =  UIAlertController(title: "Accounts", message: "Please Log In To Your Twitter Account", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             alert.addAction(UIAlertAction(title: "Settings", style: UIAlertActionStyle.Default, handler: {
