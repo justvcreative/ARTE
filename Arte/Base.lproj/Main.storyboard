@@ -38,17 +38,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bEI-bO-0LM">
                                 <rect key="frame" x="-92" y="247" width="598" height="242"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Designed by Veronica Rivera @justvcreative" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWh-Q2-tXF">
+                                <rect key="frame" x="60" y="684" width="294" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cyan="0.16" magenta="0.81000000000000005" yellow="1" black="0.050000000000000003" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <constraints>
                             <constraint firstItem="YLv-RQ-ggE" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="40" id="6Ga-Fz-GWK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sWh-Q2-tXF" secondAttribute="trailing" constant="40" id="8hN-Sm-qIY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YLv-RQ-ggE" secondAttribute="trailing" constant="40" id="A92-D0-M23"/>
                             <constraint firstItem="bEI-bO-0LM" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="ASn-pd-REF"/>
                             <constraint firstItem="ljF-dC-4Dt" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="CsL-Kv-C3r"/>
+                            <constraint firstItem="sWh-Q2-tXF" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="Pb2-3b-yxj"/>
+                            <constraint firstItem="sG3-xF-oq9" firstAttribute="top" secondItem="sWh-Q2-tXF" secondAttribute="bottom" constant="40" id="TMG-kr-sui"/>
                             <constraint firstItem="bEI-bO-0LM" firstAttribute="centerY" secondItem="AKL-0Q-bhh" secondAttribute="centerY" id="UCq-al-buz"/>
                             <constraint firstItem="YLv-RQ-ggE" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="n5q-uT-qCu"/>
                             <constraint firstItem="YLv-RQ-ggE" firstAttribute="top" secondItem="ljF-dC-4Dt" secondAttribute="bottom" constant="60" id="oXK-VM-Dd9"/>
                             <constraint firstItem="ljF-dC-4Dt" firstAttribute="top" secondItem="bEI-bO-0LM" secondAttribute="bottom" constant="40" id="sp8-fa-Tue"/>
+                            <constraint firstItem="sWh-Q2-tXF" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="40" id="zgl-f3-HrP"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -99,7 +109,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ARTE-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ee-wt-Yxf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ARTE-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ee-wt-Yxf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                         </subviews>
@@ -109,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKJ-WI-tHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="623"/>
+            <point key="canvasLocation" x="1403" y="-269"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8Sp-iP-du8">
@@ -123,44 +133,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa7-Av-8v8">
-                                <rect key="frame" x="130" y="607" width="155" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="3Yc-Ga-2nb"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ARTE-04.png" translatesAutoresizingMaskIntoConstraints="NO" id="sEi-IB-3Zw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnh-R4-lDi">
+                                <rect key="frame" x="60" y="622" width="294" height="34"/>
+                                <color key="backgroundColor" red="0.13725490870000001" green="0.79607850309999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Tweet About Roberto's Art">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="TweetAction:" destination="qcr-W3-fVx" eventType="touchUpInside" id="dW7-Wc-MOC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoB-ke-swd">
+                                <rect key="frame" x="60" y="676" width="294" height="34"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.87" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="View Art Again">
                                     <color key="titleColor" cyan="0.16" magenta="0.81000000000000005" yellow="1" black="0.050000000000000003" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Hd8-Na-a4M" kind="show" id="oku-Oz-53R"/>
+                                    <segue destination="Hd8-Na-a4M" kind="show" id="DE5-gL-aVS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3B7-Ks-5ol">
-                                <rect key="frame" x="60" y="521" width="294" height="30"/>
-                                <color key="backgroundColor" red="0.13725490868091583" green="0.79607850313186646" blue="0.98823535442352295" alpha="1" colorSpace="deviceRGB"/>
-                                <state key="normal" title="Tweet About ARTE by Roberto">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="TweetAction:" destination="qcr-W3-fVx" eventType="touchUpInside" id="1L2-bT-9zD"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Roberto" translatesAutoresizingMaskIntoConstraints="NO" id="sql-Vk-See">
+                                <rect key="frame" x="87" y="129" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.98658893084285237" green="0.98658893084285237" blue="0.98658893084285237" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="pa7-Av-8v8" firstAttribute="top" secondItem="3B7-Ks-5ol" secondAttribute="bottom" constant="56" id="7uO-fh-h0X"/>
-                            <constraint firstItem="pa7-Av-8v8" firstAttribute="centerX" secondItem="3B7-Ks-5ol" secondAttribute="centerX" id="Bp2-m8-ufI"/>
-                            <constraint firstItem="3B7-Ks-5ol" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="Kat-dy-p5d"/>
-                            <constraint firstItem="FfJ-uU-BOY" firstAttribute="top" secondItem="3B7-Ks-5ol" secondAttribute="bottom" constant="185" id="SJE-yi-IAb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3B7-Ks-5ol" secondAttribute="trailing" constant="40" id="iwc-HX-06j"/>
-                            <constraint firstItem="3B7-Ks-5ol" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="mst-yy-smh"/>
+                            <constraint firstItem="xnh-R4-lDi" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="7cY-9m-MSB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qoB-ke-swd" secondAttribute="trailing" constant="40" id="Eea-Rn-d0F"/>
+                            <constraint firstItem="qoB-ke-swd" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="Y0o-31-yqf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xnh-R4-lDi" secondAttribute="trailing" constant="40" id="g4Z-Yw-We2"/>
+                            <constraint firstItem="qoB-ke-swd" firstAttribute="top" secondItem="xnh-R4-lDi" secondAttribute="bottom" constant="20" id="jdB-Z2-AYT"/>
+                            <constraint firstItem="xnh-R4-lDi" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="s3B-L7-85Z"/>
+                            <constraint firstItem="qoB-ke-swd" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="ueR-Db-vWK"/>
+                            <constraint firstItem="FfJ-uU-BOY" firstAttribute="top" secondItem="xnh-R4-lDi" secondAttribute="bottom" constant="80" id="wzy-rX-SnI"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gC3-hY-OxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="623"/>
+            <point key="canvasLocation" x="1403" y="640"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="F0I-Ne-5E7">
@@ -174,7 +192,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ARTE-02.png" translatesAutoresizingMaskIntoConstraints="NO" id="YF1-rA-xEE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ARTE-02.png" translatesAutoresizingMaskIntoConstraints="NO" id="YF1-rA-xEE">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                         </subviews>
@@ -184,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTS-RC-uEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1376" y="623"/>
+            <point key="canvasLocation" x="1844" y="-269"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="maN-fc-FEa">
@@ -261,13 +279,15 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1812" y="623"/>
+            <point key="canvasLocation" x="2296" y="-269"/>
         </scene>
     </scenes>
     <resources>
         <image name="ARTE-01.png" width="750" height="1334"/>
         <image name="ARTE-02.png" width="750" height="1334"/>
         <image name="ARTE-03.png" width="750" height="1334"/>
+        <image name="ARTE-04.png" width="750" height="1334"/>
+        <image name="Roberto" width="200" height="200"/>
         <image name="logo" width="598" height="242"/>
     </resources>
 </document>

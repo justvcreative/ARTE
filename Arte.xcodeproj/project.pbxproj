@@ -16,6 +16,7 @@
 		9633D6B21C96230400541483 /* ARTE-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9633D6AF1C96230400541483 /* ARTE-01.png */; };
 		96BBDC211C9CEAA6007F8240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BBDC201C9CEAA6007F8240 /* ViewController.swift */; };
 		96D4E8A91CA1F73000337CD1 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4E8A81CA1F73000337CD1 /* ImageController.swift */; };
+		96D4E8AF1CA2139300337CD1 /* ARTE-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D4E8AE1CA2139300337CD1 /* ARTE-04.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9633D6AF1C96230400541483 /* ARTE-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ARTE-01.png"; path = "../../Dropbox/ARTE ART/ARTE-01.png"; sourceTree = "<group>"; };
 		96BBDC201C9CEAA6007F8240 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96D4E8A81CA1F73000337CD1 /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		96D4E8AE1CA2139300337CD1 /* ARTE-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ARTE-04.png"; path = "../../Dropbox/ARTE ART/ARTE-04.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				9633D6AF1C96230400541483 /* ARTE-01.png */,
 				9633D6AD1C96230400541483 /* ARTE-02.png */,
 				9633D6AE1C96230400541483 /* ARTE-03.png */,
+				96D4E8AE1CA2139300337CD1 /* ARTE-04.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				9633D6981C8FABA800541483 /* Assets.xcassets in Resources */,
 				9633D6B01C96230400541483 /* ARTE-02.png in Resources */,
 				9633D6B21C96230400541483 /* ARTE-01.png in Resources */,
+				96D4E8AF1CA2139300337CD1 /* ARTE-04.png in Resources */,
 				9633D6961C8FABA800541483 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

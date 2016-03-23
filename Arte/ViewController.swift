@@ -10,10 +10,6 @@ import UIKit
 import Social
 
 class ViewController:  UIViewController {
-    
-    
-    
-    
    
     @IBAction func TweetAction(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
