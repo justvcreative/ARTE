@@ -18,14 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art by Roberto Rivera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljF-dC-4Dt">
-                                <rect key="frame" x="125" y="529" width="164.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLv-RQ-ggE">
-                                <rect key="frame" x="60" y="609" width="294" height="34"/>
+                                <rect key="frame" x="40" y="595" width="334" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="View Art">
@@ -36,40 +30,62 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bEI-bO-0LM">
-                                <rect key="frame" x="-92" y="247" width="598" height="242"/>
+                                <rect key="frame" x="30" y="253" width="354" height="242"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Designed by Veronica Rivera @justvcreative" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWh-Q2-tXF">
-                                <rect key="frame" x="60" y="684" width="294" height="12"/>
+                                <rect key="frame" x="30" y="704" width="354" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Swipe Left/Right to View Art" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCe-8W-PXb">
-                                <rect key="frame" x="60" y="653" width="294" height="12"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Left/Right to View Art" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCe-8W-PXb">
+                                <rect key="frame" x="60" y="669" width="294" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art by Roberto Rivera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljF-dC-4Dt">
+                                <rect key="frame" x="60" y="515" width="294" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cyan="0.16" magenta="0.81000000000000005" yellow="1" black="0.050000000000000003" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lCe-8W-PXb" firstAttribute="top" secondItem="YLv-RQ-ggE" secondAttribute="bottom" constant="10" id="1hF-kr-aoP"/>
-                            <constraint firstItem="YLv-RQ-ggE" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="40" id="6Ga-Fz-GWK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sWh-Q2-tXF" secondAttribute="trailing" constant="40" id="8hN-Sm-qIY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YLv-RQ-ggE" secondAttribute="trailing" constant="40" id="A92-D0-M23"/>
-                            <constraint firstItem="bEI-bO-0LM" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="ASn-pd-REF"/>
-                            <constraint firstItem="ljF-dC-4Dt" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="CsL-Kv-C3r"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lCe-8W-PXb" secondAttribute="trailing" constant="40" id="MJK-76-fDL"/>
-                            <constraint firstItem="sWh-Q2-tXF" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="Pb2-3b-yxj"/>
-                            <constraint firstItem="lCe-8W-PXb" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="40" id="TJe-XG-Eco"/>
-                            <constraint firstItem="sG3-xF-oq9" firstAttribute="top" secondItem="sWh-Q2-tXF" secondAttribute="bottom" constant="40" id="TMG-kr-sui"/>
-                            <constraint firstItem="bEI-bO-0LM" firstAttribute="centerY" secondItem="AKL-0Q-bhh" secondAttribute="centerY" id="UCq-al-buz"/>
-                            <constraint firstItem="YLv-RQ-ggE" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="n5q-uT-qCu"/>
-                            <constraint firstItem="YLv-RQ-ggE" firstAttribute="top" secondItem="ljF-dC-4Dt" secondAttribute="bottom" constant="60" id="oXK-VM-Dd9"/>
-                            <constraint firstItem="lCe-8W-PXb" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="rXN-t6-LfC"/>
-                            <constraint firstItem="ljF-dC-4Dt" firstAttribute="top" secondItem="bEI-bO-0LM" secondAttribute="bottom" constant="40" id="sp8-fa-Tue"/>
-                            <constraint firstItem="sWh-Q2-tXF" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="40" id="zgl-f3-HrP"/>
+                            <constraint firstItem="lCe-8W-PXb" firstAttribute="top" secondItem="YLv-RQ-ggE" secondAttribute="bottom" constant="40" id="1D4-PW-88r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ljF-dC-4Dt" secondAttribute="trailing" constant="40" id="9fT-VF-809"/>
+                            <constraint firstItem="bEI-bO-0LM" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="C3G-4q-N1e"/>
+                            <constraint firstItem="YLv-RQ-ggE" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="20" id="Dyb-WJ-tqD"/>
+                            <constraint firstItem="lCe-8W-PXb" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="Fxm-YN-RWB"/>
+                            <constraint firstItem="sWh-Q2-tXF" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="GY6-Hd-vQI"/>
+                            <constraint firstItem="ljF-dC-4Dt" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="40" id="LVa-c2-dkA"/>
+                            <constraint firstItem="YLv-RQ-ggE" firstAttribute="top" secondItem="ljF-dC-4Dt" secondAttribute="bottom" constant="60" id="MJF-Xv-cJM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lCe-8W-PXb" secondAttribute="trailing" constant="40" id="Oki-nm-UE4"/>
+                            <constraint firstItem="bEI-bO-0LM" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="10" id="PDL-Tj-I8E"/>
+                            <constraint firstItem="YLv-RQ-ggE" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="ULE-ms-H2O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YLv-RQ-ggE" secondAttribute="trailing" constant="20" id="V4V-fM-UfR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bEI-bO-0LM" secondAttribute="trailing" constant="10" id="WM0-jV-bGM"/>
+                            <constraint firstItem="ljF-dC-4Dt" firstAttribute="top" secondItem="bEI-bO-0LM" secondAttribute="bottom" constant="20" id="Xxs-ul-zdH"/>
+                            <constraint firstItem="sG3-xF-oq9" firstAttribute="top" secondItem="sWh-Q2-tXF" secondAttribute="bottom" constant="20" id="Y3t-qT-lPQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sWh-Q2-tXF" secondAttribute="trailing" constant="10" id="gGj-4m-aZi"/>
+                            <constraint firstItem="sWh-Q2-tXF" firstAttribute="top" secondItem="lCe-8W-PXb" secondAttribute="bottom" constant="20" id="n8D-bY-Z5t"/>
+                            <constraint firstItem="YLv-RQ-ggE" firstAttribute="centerY" secondItem="AKL-0Q-bhh" secondAttribute="centerY" id="nUk-hd-iaG"/>
+                            <constraint firstItem="sWh-Q2-tXF" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="10" id="nsC-hn-qgo"/>
+                            <constraint firstItem="YLv-RQ-ggE" firstAttribute="top" secondItem="bEI-bO-0LM" secondAttribute="bottom" constant="20" id="p2F-A7-Itv"/>
+                            <constraint firstItem="YLv-RQ-ggE" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="rha-ai-hpN"/>
+                            <constraint firstItem="ljF-dC-4Dt" firstAttribute="centerX" secondItem="AKL-0Q-bhh" secondAttribute="centerX" id="uei-f3-g1M"/>
+                            <constraint firstItem="lCe-8W-PXb" firstAttribute="leading" secondItem="AKL-0Q-bhh" secondAttribute="leadingMargin" constant="40" id="xji-Ep-mAa"/>
+                            <constraint firstItem="YLv-RQ-ggE" firstAttribute="centerY" secondItem="AKL-0Q-bhh" secondAttribute="centerY" id="z8s-MU-g8N"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ULE-ms-H2O"/>
+                                <exclude reference="nUk-hd-iaG"/>
+                                <exclude reference="p2F-A7-Itv"/>
+                                <exclude reference="z8s-MU-g8N"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -148,9 +164,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnh-R4-lDi">
-                                <rect key="frame" x="60" y="622" width="294" height="34"/>
-                                <color key="backgroundColor" red="0.13725490870000001" green="0.79607850309999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="60" y="612" width="294" height="32"/>
+                                <color key="backgroundColor" red="0.13725490870000001" green="0.79607850309999995" blue="0.98823535439999999" alpha="0.80000000000000004" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <state key="normal" title="Tweet About Roberto's Art">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -159,9 +175,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoB-ke-swd">
-                                <rect key="frame" x="60" y="676" width="294" height="34"/>
+                                <rect key="frame" x="60" y="664" width="294" height="32"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.87" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <state key="normal" title="View Art Again">
                                     <color key="titleColor" cyan="0.16" magenta="0.81000000000000005" yellow="1" black="0.050000000000000003" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
@@ -170,32 +186,52 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Roberto" translatesAutoresizingMaskIntoConstraints="NO" id="sql-Vk-See">
-                                <rect key="frame" x="100" y="260" width="214" height="200"/>
+                                <rect key="frame" x="100" y="80" width="214" height="200"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Tweet Was Successful" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yg7-Uv-hw5">
+                                <rect key="frame" x="40" y="530.5" width="334" height="21.5"/>
+                                <color key="backgroundColor" red="0.27624470144094171" green="0.70768998066584277" blue="0.082094930098610935" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98658893084285237" green="0.98658893084285237" blue="0.98658893084285237" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="xnh-R4-lDi" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="7cY-9m-MSB"/>
-                            <constraint firstItem="sql-Vk-See" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="80" id="8De-Uk-EAX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qoB-ke-swd" secondAttribute="trailing" constant="40" id="Eea-Rn-d0F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xnh-R4-lDi" secondAttribute="trailing" constant="40" id="8jV-67-FPD"/>
+                            <constraint firstItem="sql-Vk-See" firstAttribute="top" secondItem="LYO-JX-axf" secondAttribute="bottom" constant="60" id="KCV-43-Smh"/>
                             <constraint firstItem="xnh-R4-lDi" firstAttribute="top" secondItem="sql-Vk-See" secondAttribute="bottom" constant="365" id="OwT-Ib-sxB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sql-Vk-See" secondAttribute="trailing" constant="80" id="RVO-FS-Gdh"/>
-                            <constraint firstItem="qoB-ke-swd" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="Y0o-31-yqf"/>
-                            <constraint firstItem="sql-Vk-See" firstAttribute="top" secondItem="LYO-JX-axf" secondAttribute="bottom" constant="240" id="bRT-C3-AgX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xnh-R4-lDi" secondAttribute="trailing" constant="40" id="g4Z-Yw-We2"/>
-                            <constraint firstItem="qoB-ke-swd" firstAttribute="top" secondItem="xnh-R4-lDi" secondAttribute="bottom" constant="20" id="jdB-Z2-AYT"/>
-                            <constraint firstItem="sql-Vk-See" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="oxg-JJ-kmE"/>
-                            <constraint firstItem="xnh-R4-lDi" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="s3B-L7-85Z"/>
-                            <constraint firstItem="qoB-ke-swd" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="ueR-Db-vWK"/>
-                            <constraint firstItem="FfJ-uU-BOY" firstAttribute="top" secondItem="xnh-R4-lDi" secondAttribute="bottom" constant="80" id="wzy-rX-SnI"/>
+                            <constraint firstItem="Yg7-Uv-hw5" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="QVt-nK-Q5d"/>
+                            <constraint firstItem="xnh-R4-lDi" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="RUD-bJ-zZD"/>
+                            <constraint firstItem="qoB-ke-swd" firstAttribute="top" secondItem="xnh-R4-lDi" secondAttribute="bottom" constant="20" id="Rp9-ZL-qPl"/>
+                            <constraint firstItem="FfJ-uU-BOY" firstAttribute="top" secondItem="qoB-ke-swd" secondAttribute="bottom" constant="40" id="SKZ-3k-Y4x"/>
+                            <constraint firstItem="qoB-ke-swd" firstAttribute="top" secondItem="xnh-R4-lDi" secondAttribute="bottom" constant="80" id="SfW-6l-nfC"/>
+                            <constraint firstItem="xnh-R4-lDi" firstAttribute="top" secondItem="sql-Vk-See" secondAttribute="bottom" constant="100" id="U13-Vo-IyH"/>
+                            <constraint firstItem="xnh-R4-lDi" firstAttribute="top" secondItem="Yg7-Uv-hw5" secondAttribute="bottom" constant="60" id="Y6i-Qt-L16"/>
+                            <constraint firstItem="Yg7-Uv-hw5" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="20" id="au4-kg-97w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yg7-Uv-hw5" secondAttribute="trailing" constant="20" id="eN1-kG-N9c"/>
+                            <constraint firstItem="qoB-ke-swd" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="g3M-py-EqV"/>
+                            <constraint firstItem="qoB-ke-swd" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="40" id="jgL-x7-Gom"/>
+                            <constraint firstItem="qoB-ke-swd" firstAttribute="top" secondItem="xnh-R4-lDi" secondAttribute="bottom" constant="20" id="nuQ-Fy-Vwl"/>
+                            <constraint firstItem="sql-Vk-See" firstAttribute="leading" secondItem="8qn-9d-2y3" secondAttribute="leadingMargin" constant="80" id="rRa-Gr-POV"/>
+                            <constraint firstItem="sql-Vk-See" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="rhp-c9-rF2"/>
+                            <constraint firstItem="xnh-R4-lDi" firstAttribute="centerX" secondItem="8qn-9d-2y3" secondAttribute="centerX" id="v07-PE-wHb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qoB-ke-swd" secondAttribute="trailing" constant="40" id="w4T-mN-EoB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sql-Vk-See" secondAttribute="trailing" constant="80" id="ymK-T2-eKF"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="OwT-Ib-sxB"/>
+                                <exclude reference="U13-Vo-IyH"/>
+                                <exclude reference="SfW-6l-nfC"/>
+                                <exclude reference="nuQ-Fy-Vwl"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="successLabel" destination="Yg7-Uv-hw5" id="Nvo-nA-Cy5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gC3-hY-OxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

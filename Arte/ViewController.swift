@@ -11,11 +11,28 @@ import Social
 
 class ViewController:  UIViewController {
    
+    @IBOutlet weak var successLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        successLabel.hidden = true
+    }
+
     @IBAction func TweetAction(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
             print("account yes")
             let tweetController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
             tweetController.setInitialText("Check out @Th3Ba1r0n's artwork on #ARTE App")
+            tweetController.completionHandler = {
+                (result: SLComposeViewControllerResult) -> Void in
+                switch result {
+                    case SLComposeViewControllerResult.Cancelled:
+                        print("cancelled")
+                    case SLComposeViewControllerResult.Done:
+                        print("tweet successful")
+                       self.successLabel.hidden = false
+                }
+            }
             self.presentViewController(tweetController, animated: true, completion: nil)
         } else {
             print("account no")
@@ -27,8 +44,8 @@ class ViewController:  UIViewController {
                 if let url = settingsURL {
                     UIApplication.sharedApplication().openURL(url)
                 }
-                self.presentViewController(alert, animated: true, completion: nil)
             }))
+            self.presentViewController(alert, animated: true, completion: nil)
         }
     }
 }
